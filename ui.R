@@ -15,7 +15,7 @@ fluidPage(
         sidebarPanel(
             div(
                 id = "people_entry",
-                h3("Enter three of your friend's names:"),
+                h4("Enter three of your friend's names:"),
                 textInput(
                     "people1",
                     "Name 1"
@@ -31,7 +31,7 @@ fluidPage(
             ),
             div(
                 id = "verb_entry",
-                h3("Enter three verbs (action words):"),
+                h4("Enter three verbs (action words):"),
                 textInput(
                     "verb1",
                     "Verb 1"
@@ -47,7 +47,7 @@ fluidPage(
             ),
             div(
                 id = "object_entry",
-                h3('Enter three objects (e.g. "a horse")'),
+                h4('Enter three objects (e.g. "a horse")'),
                 textInput(
                     "object1",
                     "Object 1"
@@ -67,10 +67,10 @@ fluidPage(
         ## Show a plot of the solution
         mainPanel(
             fluidRow(
-                column(8, p(exTxt, style = "color:blue; font-size: 20px;"))
+                column(12, p(exTxt, style = "color:blue; font-size: 20px;"))
             ),
             fluidRow(
-                column(8, p(textOutput("sentence")))
+                column(12, align = "center", p(textOutput("sentence")))
             )
         )
         
@@ -83,6 +83,4 @@ fluidPage(
          ),
     
     shinyjs::useShinyjs()
-    ## Change
-    ## includeCSS("~/github/Website/css/app.css")
 )
