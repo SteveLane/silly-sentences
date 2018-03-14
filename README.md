@@ -2,4 +2,4 @@
 
 This is a simple shiny app to generate silly sentences from user input. I use this when speaking to kids about coding.
 
-See [here](https://www.shinyapps.io/admin/#/application/298966) for an online version.
+See [here](https://stevelane.shinyapps.io/silly-sentences/) for an online version.
